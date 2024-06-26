@@ -55,9 +55,9 @@ export default function Intro() {
         className="mb-10 mt-4  px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
         <span className="font-bold">Hello, I'm Ayesha.</span> I'm a
-        <span className="font-bold"> software developer</span> with
+        <span className="font-bold"> Software Developer</span> with
         <span className="font-bold"> years</span> of experience, now transitioning into a
-        <span className="italic, font-bold"> data analyst </span>role.  I excel at 
+        <span className="italic, font-bold"> Data Analyst </span>role.  I excel at 
         <span className="underline"> analyzing data and building dashboards</span>.
       </motion.h1>
       <motion.div
@@ -87,7 +87,7 @@ export default function Intro() {
           href="/Ayesha-Bhangu-Resume.pdf"
           className="group   bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
         >
-          Download RESUME{" "}
+          Download Resume{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition " />
         </a>
         <a
