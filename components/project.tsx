@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState} from "react";
+import {  useRef, useState} from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -35,9 +35,9 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
 
-    const [size, setSize] =useState(null);
+    const [size, setSize] = useState<string | null>(null);
 
-    const handleOpen = (value) => setSize(value);
+    const handleOpen = (value: string) => setSize(value);
 
 
   return (
@@ -67,7 +67,11 @@ export default function Project({
               ))}
             </ul>
             <div className="my-4">
-              <Button onClick={() => handleOpen("xl")} variant="gradient">
+              <Button
+                placeholder={"View Details"}
+                onClick={() => handleOpen("xl")}
+                variant="gradient"
+              >
                 View Details
               </Button>
             </div>
@@ -103,18 +107,24 @@ export default function Project({
         }
         size={"lg"}
         handler={handleOpen}
+        placeholder=""
       >
-        <DialogHeader>{title}</DialogHeader>
-        <DialogBody>
-          <ul className="space-y-1 text-gray-600 dark:text-gray-40">
+        <DialogHeader placeholder="">{title}</DialogHeader>
+        <DialogBody placeholder="">
+          <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-40">
             {points.map((point) => (
               <li key={point}>{point}</li>
             ))}
           </ul>
         </DialogBody>
-        <DialogFooter>
+        <DialogFooter placeholder="">
           {liveLink && (
-            <Button variant="gradient" color="green" className="mr-1">
+            <Button
+              placeholder=""
+              variant="gradient"
+              color="green"
+              className="mr-1"
+            >
               <span className="text-[1rem]">
                 <Link href={liveLink} legacyBehavior>
                   <a className="flex" target="_blank" rel="noopener noreferrer">
@@ -126,7 +136,12 @@ export default function Project({
             </Button>
           )}
           {gitHub && (
-            <Button variant="gradient" color="black" className="mr-1">
+            <Button
+              placeholder=""
+              variant="gradient"
+              color="black"
+              className="mr-1"
+            >
               <span className="text-[1rem]">
                 <Link href={gitHub} legacyBehavior>
                   <a className="flex" target="_blank" rel="noopener noreferrer">
@@ -138,9 +153,10 @@ export default function Project({
             </Button>
           )}
           <Button
+            placeholder=""
             variant="gradient"
             color="green"
-            onClick={() => handleOpen(null)}
+            onClick={() => handleOpen("")}
           >
             <span>Close</span>
           </Button>
