@@ -70,7 +70,7 @@ export const projectsData = [
       "Analyzed COVID-19 vaccination data, detailing global vaccination numbers and comparing rates across countries. Investigated how GDP influences vaccination efforts.",
     tags: ["EXCEL", "TABLEAU"],
     imageUrl: dynamic,
-    points:["point 1","•point 2"],
+    points:["The COVID-19 pandemic affected millions worldwide. Although no longer considered an active threat by the WHO in 2024, its impact remains significant. I aimed to quantify the vaccination program's speed and scale post-pandemic. As the lead data analyst, I designed and implemented an interactive dashboard using Tableau to explore key metrics of the global vaccination program, providing real-time insights into vaccination data up until June 2024.","Utilizing data from Our World in Data COVID vaccination, I created a dashboard with interactive filters for date ranges, continents, and countries. It features bar graphs, map graphs, and scatter plots, displaying metrics on partially and fully vaccinated populations, daily vaccines administered, and the correlation between GDP and vaccination rates.","The dashboard offered crucial insights into the global vaccination program's progress, enhancing transparency, accountability, coordination, and accelerating herd immunity in numerous countries. This project highlighted the importance of data visualization tools for conveying complex information clearly. Moving forward, I plan to integrate more real-time data sources and enhance the dashboard's usability."],
     liveLink:"https://public.tableau.com/app/profile/ayesha.bhangu/viz/Covid-19Vaccinations_17188629338160/GlobalCOVIDVaccineTracker?publish=yes",    
     gitHub:"https://github.com/ayeshabh/COVID-19-Vaccinations"
   },
