@@ -111,7 +111,7 @@ export default function Project({
       >
         <DialogHeader placeholder="">{title}</DialogHeader>
         <DialogBody placeholder="">
-          <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-40">
+          <ul className="space-y-1 text-gray-500 dark:text-gray-40">
             {points.map((point) => (
               <li key={point}>{point}</li>
             ))}
